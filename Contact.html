@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+</head>
+<body>
+  <h1>Contact</h1>
+  <fieldset style="width: 500px;">
+  <legend>Some message</legend>
+  <form action="mailto:romantimilsina@gmail.com" method="post" 
+  enctype="text/plain">
+    <p>
+      <label for="">Your email</label>
+      <input type="email" placeholder="fill email"
+      id="name" name="email">
+    </p>
+    <p>
+      <label for="">Your Name</label>
+      <input type="text" placeholder="fill name"
+      id="name" name="username">
+    </p>
+    
+    <p>
+      
+      <input type="radio" 
+      id="male" name="gender" value="male">
+      <label for="male">male</label>
+    </p>
+    <p>
+      
+      <input type="radio" 
+      id="female" name="gender" value="female">
+      <label for="female">female</label>
+    </p>
+    <p>
+      <h4>Select your hobbies</h4>
+      <input type="checkbox" 
+      id="dance" name="dance" value="dance">
+      <label for="female">female</label>
+
+      <input type="checkbox" 
+      id="coding" name="coding" value="coding">
+      <label for="coding">coding</label>
+
+      <input type="checkbox" 
+      id="sing" name="sing" value="sing">
+      <label for="sing">sing</label>
+    </p>
+
+    <label for="msg">
+      <h3>Send a message</h3>
+    </label>
+    <textarea name="msg" id="msg" cols="40" rows="10"></textarea>
+
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+
+  </form>
+</fieldset>
+</body>
+</html>
