@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <link rel="stylesheet" href="./styles.css">
   <style>
 
     *{
@@ -17,20 +19,74 @@
 
     }
 
-    #head{
-      color: brown;
+    p{
+      color: green;
     }
 
-    p{
-      color: red;
+    
+    .box{
+      border: 1px solid pink;
+      margin: 20px 0;
+    }
+
+
+    .box>h1 {
+      color: rgb(72, 4, 4);
+      font-size: 50px;
+    }
+
+    .box+p{
+      font-size: 50px;
+    }
+
+    .box:hover{
+      background-color: rgb(232, 8, 116);
+
+    }
+
+   div+p{
+    font-size: 200px;
+color: tomato;
+    }
+
+    p::after{
+      content: 'Hghlight';
+      background: blue;
+    }
+
+    img[alt='something']{
+      width: 300px;
+    }
+
+    input[type='email']{
+      border: 1px solid red;
     }
   </style>
-    <link rel="stylesheet" href="./styles.css">
-
+    
 </head>
 <body>
   <h1 >Body</h1>
+  <p>This is body</p><p>This is body</p>
+
+  <div class="box">
+    <p>lol</p>
+    <p>lkjhgfd</p>
+    <h1 >box</h1>
   <p>This is body</p>
+  <h4>This is body</h4>
+  <div>
+    <p>This is body</p>
+  </div>
+  </div>
+
+  <p>nod</p>
+
+<div id="head">
+  <h1 >box1 h1</h1>
+  
+  <img src="https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+  alt="something">
+</div>
+<input type="email">
 </body>
-<div id="head"></div>
 </html>
