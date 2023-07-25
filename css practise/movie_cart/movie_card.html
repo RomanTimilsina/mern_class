@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      color: white;
+    }
+    .container{
+      padding: 5px 10px;
+      width: 200px;
+      padding: 5px 8px 15px 8px;
+      border-radius: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      
+      background-image:  linear-gradient(to bottom left, rgb(0, 0, 0), rgb(83, 82, 82),rgb(0, 0, 0));
+    }
+    .box{
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .image{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      
+
+      
+      box-shadow: rgba(241,114,4,0.55) 0px 4px 12px;
+
+    }
+
+    img{
+      width: 100%;
+      border-radius: 5px;
+      
+    }
+
+    .mb{
+      margin-bottom: 5px;
+    }
+
+    .dock{
+      color: white;
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      font-weight: 600;
+
+      font-size: 12px;
+      background-color: blue;
+      padding: 5px;
+      border-radius: 40%;
+    }
+
+    .name{
+      font-weight: 600;
+    }
+
+    .desc{
+      color: white;
+      font-size: 12px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <p>MOVIE DETAILS</p>
+
+  <div class="box">
+    <div class="image">
+    <img 
+    src= 'https://contentserver.com.au/assets/637737_jumanji_v8_aa.jpg' 
+    alt="">
+    <div class="dock">
+      Dock
+    </div>
+  </div>
+    <p class="name">JUMANJI</p>
+  
+  </div>
+  
+    <div class="rating mb"><div class="rw-ui-container"></div></div>
+    <div class="desc">Jumanji is a 1981 fantasy children's picture book written and illustrated by American author Chris Van Allsburg.</div>
+</div>
+<script type="text/javascript">(function(d, t, e, m){
+    
+  // Async Rating-Widget initialization.
+  window.RW_Async_Init = function(){
+              
+      RW.init({
+          huid: "492789",
+          uid: "cf5617966484374cb5b1080b7740f724",
+          options: { "style": "oxygen" } 
+      });
+      RW.render();
+  };
+      // Append Rating-Widget JavaScript library.
+  var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+      l = d.location, ck = "Y" + t.getFullYear() + 
+      "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+      f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+      a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+  if (d.getElementById(id)) return;              
+  rw = d.createElement(e);
+  rw.id = id; rw.async = true; rw.type = "text/javascript";
+  rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+  s.parentNode.insertBefore(rw, s);
+  }(document, new Date(), "script", "rating-widget.com/"));</script>
+</body>
+</html>
