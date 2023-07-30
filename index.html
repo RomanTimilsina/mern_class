@@ -66,6 +66,7 @@
 
     }
     img{
+      width: 100%;
       height: 300px;
     }
     .info{
@@ -168,6 +169,19 @@
     .footImg{
 width: 5%;
 height: 5%;    }
+
+@media  (max-width: 480px) {
+  .cardContainer, .navbar, .personCard{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  
+  .mainImg{
+display: none;
+}
+}
     
   </style>
 </head>
@@ -193,7 +207,7 @@ height: 5%;    }
     <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero et ducimus voluptatibus ullam impedit obcaecati incidunt numquam. Quae atque quidem temporibus mollitia facilis, necessitatibus eaque voluptates officia maxime, dolores sequi.</div>
   </div>
   <div class="img">
-    <img src="https://images.pexels.com/photos/16883535/pexels-photo-16883535/free-photo-of-woman-in-white-dress-posing-in-building-door.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+    <img class='mainImg' src="https://images.pexels.com/photos/16883535/pexels-photo-16883535/free-photo-of-woman-in-white-dress-posing-in-building-door.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
   </div>
     </div>
   </div>
